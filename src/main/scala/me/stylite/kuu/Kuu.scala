@@ -16,6 +16,6 @@ object Kuu extends App {
   val task = new Runnable {
     def run() = uta.send("Happy birthday <@551644347527987222>")
   }
-  val f = ex.scheduleAtFixedRate(task, 1, 30, TimeUnit.SECONDS)
+  val f = ex.scheduleAtFixedRate(task, 0, 1, TimeUnit.DAYS)
 
 }
